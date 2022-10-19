@@ -1,0 +1,22 @@
+body {
+  background-image: url(/image/Pic_5.jpg);
+}
+
+main {
+  padding: 10px;
+}
+
+header {
+  font-style: italic;
+  text-align: center;
+  background-color: #7c9169;
+  padding: 10px;
+}
+
+section {
+  background-color: #caddba;
+}
+
+.title {
+  text-align: center;
+}
