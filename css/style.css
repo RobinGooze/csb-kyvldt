@@ -3,7 +3,7 @@ body {
 }
 
 main {
-  padding: 10px;
+  background-color: white;
 }
 
 header {
@@ -15,8 +15,9 @@ header {
 
 section {
   background-color: #caddba;
+  margin-top: 50px;
 }
 
-.title {
+h2 {
   text-align: center;
 }
