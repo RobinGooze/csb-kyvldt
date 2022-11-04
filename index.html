@@ -13,7 +13,7 @@
     </header>
     <main>
       <section>
-        <h2 class="title">Натуральные краски: кому они нужны?</h2>
+        <h2>Натуральные краски: кому они нужны?</h2>
         <p>
           Натуральные краски для одежды гипоалергенны и не вызывают раздражения
           на коже.
@@ -29,11 +29,18 @@
         </p>
       </section>
       <section>
-        <form>
-          <h3>Заказать краски!</h3>
-          <input type="text" name="email" placeholder="Введите ваш email" />
-          <button>Заказать</button>
-        </form>
+        <fieldset>
+          <legend>Заказать краски</legend>
+          <label>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Введите ваш email"
+            />
+          </label>
+          <input type="submit" name="submit" value="Заказать!" />
+        </fieldset>
       </section>
     </main>
   </body>
