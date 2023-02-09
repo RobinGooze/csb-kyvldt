@@ -4,6 +4,12 @@ header {
   margin-top: 4rem;
 }
 
+#center-block {
+  position: relative;
+  left: 10%;
+  width: 80%;
+}
+
 footer {
   color: white;
   width: 100%;
@@ -11,8 +17,9 @@ footer {
   display: inline-block;
 }
 
-body {
-  margin: 0;
+section,
+header {
+  box-shadow: 4px 6px 10px -2px;
 }
 
 section {
@@ -28,8 +35,11 @@ p {
   text-align: center;
 }
 
-p {
-  margin-left: 5%;
+#sentence {
+  position: fixed;
+  bottom: 70px;
+  left: -50px;
+  transform: rotate(90deg);
 }
 
 h1,
@@ -40,7 +50,7 @@ h2 {
 fieldset {
   display: inline-block;
   width: 100%;
-  margin: 0;
+  margin: -10px;
   border: 0;
 }
 
@@ -81,7 +91,25 @@ input[type="submit"] {
 }
 
 .background img {
-  height: 70em;
+  height: 50em;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    margin: 0;
+  }
+  section,
+  header {
+    box-shadow: none;
+  }
+  #center-block {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  #sentence {
+    display: none;
+  }
 }
