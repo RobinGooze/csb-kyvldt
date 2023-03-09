@@ -1,3 +1,7 @@
+:root {
+  --zero-margin: 0;
+}
+
 header {
   font-style: italic;
   background-color: #7c9169;
@@ -82,27 +86,39 @@ input[type="submit"] {
 }
 
 .background {
-  top: 0;
-  left: 0;
-  justify-content: center;
+  top: var(--zero-margin);
+  left: var(--zero-margin);
+  display: flex;
   position: absolute;
-  width: 100%;
   z-index: -1;
+  height: 100%;
+  border: 5px solid black;
 }
 
-.background img {
-  height: 50em;
-  width: 100%;
+img {
+  left: var(--zero-margin);
+  top: var(--zero-margin);
   object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    height: 950px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   body {
-    margin: 0;
+    margin: var(--zero-margin);
   }
   section,
   header {
     box-shadow: none;
+  }
+  .background {
+    height: 1050px;
   }
   #center-block {
     position: relative;
