@@ -86,13 +86,13 @@ input[type="submit"] {
 }
 
 .background {
+  position: center;
   top: var(--zero-margin);
   left: var(--zero-margin);
   display: flex;
   position: absolute;
   z-index: -1;
   height: 100%;
-  border: 5px solid black;
 }
 
 img {
